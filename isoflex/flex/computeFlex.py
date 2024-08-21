@@ -71,7 +71,6 @@ class computeFlex(object):
 
         # Run gflex on polar grids
         if rank == 0:
-            self.north_utm.to_netcdf('utm_north.nc')
             north_flex = self._cmptFlex(self.north_utm, shifted=False)
             flexNGrid = self._reproject_ll([-180, 180, 75, 90], north_flex,
                                            2, north_flex.rio.crs)
