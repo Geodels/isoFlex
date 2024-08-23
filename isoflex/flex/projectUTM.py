@@ -1,7 +1,7 @@
 import pyproj
 import numpy as np
 import xarray as xr
-# import rioxarray as xrio
+import rioxarray as xrio
 from mpi4py import MPI
 from time import process_time
 
