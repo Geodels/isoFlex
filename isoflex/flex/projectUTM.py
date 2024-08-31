@@ -126,7 +126,6 @@ class projectUTM(object):
 
     def _makeUTM(self, k, dll=10):
 
-        import rioxarray as xrio
         min_lon = self.listbnds[k][0] - 5
         max_lon = self.listbnds[k][1] + 5
         min_lat = self.listbnds[k][2] - 5
@@ -253,3 +252,5 @@ class projectUTM(object):
                                 num=refinement))
 
         return np.concatenate(lons), np.concatenate(lats)
+
+
